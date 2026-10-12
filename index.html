@@ -1,0 +1,1185 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÚCIDAS · Comunidad y práctica diaria para mujeres de 43 a 59 años</title>
+  <meta name="description" content="LÚCIDAS es la comunidad para mujeres de 43 a 59 años que atraviesan una etapa de cierres y cambios. Una práctica diaria de 60 segundos y un grupo que te entiende.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LÚCIDAS · Dejá de estar pendiente de todo">
+  <meta property="og:description" content="Comunidad para mujeres de 43 a 59 años. Volvé a vos en 60 segundos al día. Grupo fundador de 20 lugares.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #FAF7F2;
+      --bg-sand: #F3ECE2;
+      --bg-sand-light: #FBF8F4;
+      --bg-card: #FFFFFF;
+      --bg-contrast: #EAE0D3;
+      --plum-deep: #3A232E;
+      --plum-light: #523743;
+      --text-main: #2C2628;
+      --text-muted: #5F5659;
+      --gold-accent: #B08B58;
+      --gold-soft: #D4B483;
+      --border-soft: rgba(58, 35, 46, 0.08);
+      --shadow-sm: 0 4px 20px rgba(58, 35, 46, 0.05);
+      --shadow-md: 0 10px 30px rgba(58, 35, 46, 0.08);
+      --shadow-lg: 0 16px 45px rgba(58, 35, 46, 0.12);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 32px;
+      --container-max: 1040px;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 18px;
+      line-height: 1.65;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-serif);
+      color: var(--plum-deep);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 3.4rem);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    p { margin-bottom: 18px; color: var(--text-main); }
+    .lead { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 24px; }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .text-center { text-align: center; }
+
+    section { padding: 85px 0; position: relative; }
+    .bg-cream { background-color: var(--bg-cream); }
+    .bg-sand { background-color: var(--bg-sand); }
+    .bg-contrast { background-color: var(--bg-contrast); }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--plum-deep);
+      color: #FFFFFF !important;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 16px 36px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 25px rgba(58, 35, 46, 0.2);
+      border: 1px solid var(--plum-deep);
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--plum-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(58, 35, 46, 0.25);
+    }
+
+    .btn-subtext {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+
+    header {
+      padding: 24px 0;
+      background: transparent;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .brand {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--plum-deep);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .hero { padding: 50px 0 80px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .badge-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--gold-soft);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--plum-deep);
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--gold-accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .phone-mockup {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto;
+      background: #111;
+      padding: 12px;
+      border-radius: 44px;
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .phone-speaker {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: #333;
+      border-radius: 999px;
+      z-index: 5;
+    }
+
+    .phone-screen {
+      width: 100%;
+      border-radius: 34px;
+      overflow: hidden;
+      aspect-ratio: 9 / 16;
+      background: #1A1A1A;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .phone-screen video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(58, 35, 46, 0.2) 0%, rgba(58, 35, 46, 0.65) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 4;
+      transition: opacity 0.3s ease;
+    }
+
+    .video-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .play-btn-circle {
+      width: 68px;
+      height: 68px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.2s ease;
+      margin-bottom: 12px;
+    }
+
+    .play-btn-circle svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--plum-deep);
+      margin-left: 4px;
+    }
+
+    .video-overlay:hover .play-btn-circle {
+      transform: scale(1.08);
+      background: #FFFFFF;
+    }
+
+    .play-label {
+      color: #FFFFFF;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      letter-spacing: 0.02em;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 34px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-soft);
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .list-check {
+      list-style: none;
+      margin: 24px 0;
+    }
+
+    .list-check li {
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 18px;
+      color: var(--text-main);
+    }
+
+    .list-check li::before {
+      content: "—";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      color: var(--gold-accent);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .include-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .include-item h4 {
+      font-size: 1.15rem;
+      color: var(--plum-deep);
+      font-weight: 700;
+    }
+
+    .include-item p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-num {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--gold-accent);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .quote-mark {
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      line-height: 1;
+      color: var(--gold-soft);
+      opacity: 0.45;
+      margin-bottom: -15px;
+    }
+
+    .testimonial-text {
+      font-size: 0.98rem;
+      color: var(--text-main);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--plum-deep);
+      font-size: 0.92rem;
+      font-style: normal;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 14px;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .bio-photo-wrapper {
+      position: relative;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .bio-photo {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      background-color: var(--bg-sand);
+    }
+
+    .pricing-box {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 48px 36px;
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--gold-soft);
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .price-regular {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+      margin-bottom: 6px;
+    }
+
+    .price-founder {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--plum-deep);
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+
+    .pricing-details {
+      text-align: left;
+      margin: 28px 0;
+      font-size: 0.96rem;
+      color: var(--text-muted);
+    }
+
+    .pricing-details p { margin-bottom: 12px; }
+
+    .faq-container {
+      max-width: 780px;
+      margin: 36px auto 0;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      border: 1px solid var(--border-soft);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 20px 24px;
+      background: none;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--plum-deep);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-icon {
+      font-size: 1.3rem;
+      color: var(--gold-accent);
+      transition: transform 0.25s ease;
+      font-weight: 300;
+    }
+
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 24px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 350px;
+      padding: 0 24px 20px;
+    }
+
+    .legal-notice {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 40px auto 0;
+      text-align: center;
+      opacity: 0.85;
+    }
+
+    .wa-float-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 20px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+      z-index: 999;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .wa-float-bar .btn-primary {
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 1rem;
+      box-shadow: none;
+    }
+
+    @media (max-width: 860px) {
+      .hero-grid, .bio-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero-content { align-items: center; text-align: center; }
+      .phone-mockup { max-width: 300px; }
+      .wa-float-bar { display: block; }
+      body { padding-bottom: 80px; }
+      section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container text-center">
+      <a href="#" class="brand">LÚCIDAS</a>
+    </div>
+  </header>
+
+  <!-- BLOQUE 1 · PORTADA -->
+  <section class="hero bg-cream">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-counter" id="counter-badge">
+            <span class="badge-dot"></span>
+            <span id="counter-text">Quedan 20 de 20 lugares fundadores</span>
+          </div>
+
+          <h1>Dejá de estar pendiente de todo. Volvé a vos en 60 segundos al día.</h1>
+          
+          <p class="lead">
+            LÚCIDAS es la comunidad para mujeres de 43 a 59 años que atraviesan una etapa de cierres y cambios. Una práctica diaria de 60 segundos y un grupo que te entiende sin que tengas que explicar tanto.
+          </p>
+
+          <a href="#" class="btn-primary wa-btn">QUIERO MI ENCUENTRO GRATUITO</a>
+          <span class="btn-subtext">Grupo fundador: solo 20 lugares · Primero hablamos 30 minutos, sin costo · Cancelás cuando querés</span>
+        </div>
+
+        <div>
+          <!-- MOCKUP CELULAR CON VIDEO -->
+          <div class="phone-mockup">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen" id="video-wrapper">
+              
+              <div class="video-overlay" id="video-overlay">
+                <div class="play-btn-circle">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <span class="play-label">Escuchar a Laura</span>
+              </div>
+
+              <video id="intro-video" controls playsinline preload="metadata">
+                <source src="video_lucidas.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGUÍS FUNCIONANDO -->
+  <section class="bg-sand">
+    <div class="container" style="max-width: 800px;">
+      <h2>Seguís funcionando. Pero ya no te reconocés del todo.</h2>
+      
+      <p>Los hijos crecen. Algunas relaciones terminan. La maternidad cambia de lugar. Hay duelos, separaciones, cambios de trabajo. Y sí, también está la menopausia haciendo de las suyas.</p>
+      
+      <p>Son muchos cierres. Muchos cambios.</p>
+      
+      <p>Y mientras tanto, vos seguís haciendo listas, resolviendo cosas y estando pendiente de todo.</p>
+      
+      <p style="font-weight: 700; color: var(--plum-deep); font-size: 1.15rem; margin-top: 24px;">
+        Hasta que un día te das cuenta: estás agotada de estar pendiente.
+      </p>
+
+      <div class="card" style="margin-top: 36px;">
+        <span class="section-tag">¿TE PASA ESTO?</span>
+        <ul class="list-check">
+          <li>Estás en una etapa de muchos cierres y cambios, y sentís que nadie te lo explicó.</li>
+          <li>Te despertás pensando en lo que falta. Te acostás repasando lo que no hiciste.</li>
+          <li>Ya probaste terapia, cursos, retiros. Todo suma. Pero algo sigue sin cerrar.</li>
+          <li><strong>Y lo más difícil: no tenés un lugar donde no tengas que explicar tanto.</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- NO NECESITÁS OTRO MÉTODO -->
+  <section class="bg-cream">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h2>No necesitás otro método para resolver tu vida</h2>
+      
+      <p class="lead">Podés seguir así: sosteniendo a todos, anticipando todo, sin parar.</p>
+      
+      <p class="lead">
+        Pero el cansancio de esta etapa no se resuelve con más organización. Se alivia <strong>parando</strong>. Y es mucho más fácil parar cuando no lo hacés sola.
+      </p>
+      
+      <p style="font-family: var(--font-serif); font-size: 2rem; color: var(--plum-deep); font-weight: 600; margin-top: 24px;">
+        Para eso existe LÚCIDAS.
+      </p>
+    </div>
+  </section>
+
+  <!-- QUÉ ES LÚCIDAS -->
+  <section class="bg-sand">
+    <div class="container" style="max-width: 860px;">
+      <div class="text-center" style="margin-bottom: 40px;">
+        <h2>Qué es LÚCIDAS</h2>
+        <p class="lead">
+          <strong>Una comunidad y una práctica diaria.</strong> No es terapia. No es un curso con módulos. No es un método para "arreglarte".
+        </p>
+        <p>
+          Es un espacio donde mujeres en la misma etapa se encuentran, se sostienen y practican. Y una práctica de 60 segundos al día para parar y volver al presente.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 30px;">
+        <span class="section-tag">LO QUE EMPEZÁS A NOTAR</span>
+        <ul class="list-check">
+          <li>Un respiro real en medio del día, aunque no tengas tiempo.</li>
+          <li>Menos ruido mental al acostarte.</li>
+          <li>La tranquilidad de no tener que fingir que estás bien.</li>
+          <li>Sentirte acompañada por mujeres que están en lo mismo.</li>
+          <li>Sentirte libre de elegir quién querés ser.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="section-tag">LA PRÁCTICA DE 60 SEGUNDOS</span>
+        <p>
+          Primero elegís una frase que describa la vida que querés vivir. Después, cada día, dedicás 60 segundos a <strong>sentirla</strong>, no a pensarla. Usamos herramientas simples de reprogramación subconsciente para que ese minuto tenga efecto real.
+        </p>
+        <p style="margin: 0; font-weight: 600; color: var(--plum-deep);">
+          Parece fácil, y no lo es. Pero es <strong>simple</strong>. Hacerlo fácil lleva un tiempo, y para eso está LÚCIDAS.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES DE DECIDIR, HABLAMOS -->
+  <section class="bg-cream">
+    <div class="container" style="max-width: 760px; text-align: center;">
+      <h2>Antes de decidir, hablamos</h2>
+      <p class="lead">
+        Antes de que entres, tenemos un encuentro gratuito de 30 minutos. Me contás en qué etapa estás, te explico cómo funciona y vemos juntas si LÚCIDAS es para vos. Sin compromiso ni presión.
+      </p>
+      <div style="margin-top: 32px;">
+        <a href="#" class="btn-primary wa-btn">RESERVAR MI ENCUENTRO GRATUITO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE LA MEMBRESÍA -->
+  <section class="bg-sand">
+    <div class="container">
+      <h2>Qué incluye la membresía</h2>
+      
+      <div class="cards-grid">
+        <div class="card include-item">
+          <h4>Comunidad privada (Telegram)</h4>
+          <p>Un lugar para conversar y sostenerte con mujeres en tu misma etapa. Sin juicios. Sin positividad tóxica.</p>
+        </div>
+
+        <div class="card include-item">
+          <h4>2 encuentros online al mes</h4>
+          <p>60 minutos de práctica y conversación. Si no llegás en vivo, quedan grabados.</p>
+        </div>
+
+        <div class="card include-item">
+          <h4>1 taller por mes</h4>
+          <p>90 minutos para profundizar en un tema (10 áreas de vida que se irán desarrollando). Queda grabado.</p>
+        </div>
+
+        <div class="card include-item">
+          <h4>Biblioteca de prácticas</h4>
+          <p>Audios y ejercicios para que avances a tu ritmo en 10 áreas de vida.</p>
+        </div>
+
+        <div class="card include-item">
+          <h4>Práctica diaria de 60 segundos</h4>
+          <p>Parar y volver al presente, aunque no tengas tiempo ni ganas.</p>
+        </div>
+      </div>
+
+      <p class="text-center" style="margin-top: 32px; font-size: 0.95rem; color: var(--text-muted);">
+        Lo ideal es sumarte a los encuentros en vivo: el sostén del grupo pasa por estar. Pero si un mes no podés, no pasa nada.
+      </p>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2>Cómo funciona</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Hablamos 30 minutos, gratis.</h4>
+          <p class="lead" style="font-size: 0.95rem; margin: 0;">Nos conocemos y vemos si LÚCIDAS es para vos.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Confirmás tu lugar.</h4>
+          <p class="lead" style="font-size: 0.95rem; margin: 0;">Si sentimos que es para vos, te paso el link para pagar tu primer mes.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Entrás a la comunidad.</h4>
+          <p class="lead" style="font-size: 0.95rem; margin: 0;">Apenas pagás, recibís el acceso al grupo privado.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h4>Te presentás.</h4>
+          <p class="lead" style="font-size: 0.95rem; margin: 0;">Contás quién sos y en qué etapa estás. Sin vueltas.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <h4>Practicás 60 segundos y te sostenés.</h4>
+          <p class="lead" style="font-size: 0.95rem; margin: 0;">Dos encuentros y un taller por mes, online. Si no podés en vivo, los ves grabados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="bg-sand">
+    <div class="container">
+      <div class="text-center" style="max-width: 760px; margin: 0 auto 30px;">
+        <h2>Cómo vamos a construir este espacio</h2>
+        <p>Vos estarás en el grupo de 20 mujeres fundadoras. Acá se van a compartir tus logros y tu voz va a quedar en esta página.</p>
+        <p style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; color: var(--plum-deep);">
+          ¿Alguna vez fuiste parte de algo desde el principio?
+        </p>
+      </div>
+
+      <div class="text-center" style="margin-top: 45px;">
+        <span class="section-tag">MUJERES QUE YA PASARON POR MIS SESIONES</span>
+        <p style="font-size: 0.98rem; color: var(--text-muted);">
+          Antes de LÚCIDAS acompañé a muchas mujeres en sesiones individuales. Esto es lo que contaron:
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">No sabía cómo afrontar mi separación, siempre estaba dilatando las decisiones. Después de 3 semanas pude concretar todo lo que necesitaba para hacer el movimiento de mudarme y poner límites. Para mí representó un gran avance.</p>
+          <div class="testimonial-author">Natalia · Córdoba, Argentina</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Una parte de mí quería seguir produciendo, trabajando y avanzando. Otra parte simplemente necesitaba detenerse. Comprendí que quizás también estaba aprendiendo a ponerme límites a mí misma y a permitirme descansar sin culpa. Lo que más me impresionó fue el estado de mi mente. Había un silencio interno muy poco habitual.</p>
+          <div class="testimonial-author">Rosa Ávila · Chile</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Me sentía con muy poca energía, con ganas de nada. Estaba pasando muchas cosas, incluso un duelo, que me costaba poder arrancar. Con esta técnica, en el mismo día ya sentí esa energía, ese bienestar para poder arrancar más fuerte, con más ganas y más tranquila. Y lo de tomar decisiones, que también me costaba, ¡lo logré! Agradecida, ahora estoy muy bien.</p>
+          <div class="testimonial-author">Marcela Gerbino · Argentina</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">A la semana de tomar las sesiones pude vender varios muebles que me habían quedado de mi negocio anterior para así invertir en mi próximo proyecto. ¡Fue muy efectivo! Gracias.</p>
+          <div class="testimonial-author">Verónica · Misiones, Argentina</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Gracias Laura por hacer las sesiones para mí y para mi hija. Ahora por fin podemos conversar con sinceridad y todo eso que le preocupaba estamos pudiendo arreglarlo. Ella está más abierta y yo también escucho más.</p>
+          <div class="testimonial-author">Noelia · Mendoza, Argentina</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Ya en la primera sesión logré sentirme con mejor ánimo, permitiéndome tomar mejores decisiones en el día. ¡La paz mental no tiene precio! Muchas gracias.</p>
+          <div class="testimonial-author">Lorena · Mendoza, Argentina</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN ES / NO ES -->
+  <section class="bg-cream">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+        
+        <div class="card">
+          <h3 style="color: var(--plum-deep); border-bottom: 2px solid var(--gold-soft); padding-bottom: 12px; margin-bottom: 20px;">
+            Para quién es
+          </h3>
+          <ul class="list-check">
+            <li>Mujeres de 43 a 59 años en una etapa de cierres y cambios.</li>
+            <li>Las que ya probaron de todo y siguen buscando.</li>
+            <li>Las que quieren un lugar real, sin pretender que están bien.</li>
+            <li>Las que quieren pertenecer a un grupo que las entienda.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background-color: var(--bg-contrast);">
+          <h3 style="color: var(--plum-deep); border-bottom: 2px solid var(--plum-deep); padding-bottom: 12px; margin-bottom: 20px;">
+            Para quién no es
+          </h3>
+          <ul class="list-check">
+            <li>Para quien busca una solución mágica sin practicar.</li>
+            <li>Para quien quiere que otra persona haga el proceso por ella.</li>
+            <li>Para quien busca un tratamiento médico, psicológico o nutricional.</li>
+            <li>Para quien no está dispuesta a comprometerse con un espacio de práctica.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉN ESTÁ DETRÁS (FOTO INCRUSTADA DIRECTA) -->
+  <section class="bg-sand">
+    <div class="container">
+      <div class="bio-grid">
+        <div class="bio-photo-wrapper">
+          <img 
+            id="laura-profile-img"
+            src="foto_laura.jpg" 
+            alt="Laura Fernández - Creadora de LÚCIDAS" 
+            class="bio-photo"
+          >
+        </div>
+
+        <div>
+          <span class="section-tag">QUIÉN ESTÁ DETRÁS</span>
+          <h2>Soy Laura Fernández.</h2>
+          <p>Soy Licenciada en Recursos Humanos y hace más de 15 años acompaño procesos de cambio, toma de decisiones y gestión de energía en personas y equipos.</p>
+          <p>Atravesé una operación de urgencia grave, la crianza de mis hijos, la vida en pareja, la muerte de mi papá, épocas sin ingresos estables y la menopausia. Muchas herramientas me ayudaron a salir adelante. Pero durante años lo viví sintiéndome sola, perdida y, muchas veces, frustrada.</p>
+          <p>Ahí entendí que no necesitaba otro método. Necesitaba parar, y hacerlo con otras. Por eso creé LÚCIDAS.</p>
+          <p>Mi formación se completa con herramientas de bienestar como Tai Chi, Qi Gong y reprogramación subconsciente.</p>
+          <p style="font-weight: 700; color: var(--plum-deep); font-size: 1.1rem; margin-top: 18px;">
+            No vengo a decirte qué hacer. Vengo a sostener un espacio para que puedas parar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIO / OFERTA FUNDADORAS -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2 class="text-center">Tu lugar en el grupo fundador</h2>
+      
+      <div class="pricing-box">
+        <p class="lead" style="margin-bottom: 20px;">
+          Todo lo que recibís: comunidad privada, 2 encuentros al mes, 1 taller mensual, biblioteca de prácticas y la práctica diaria de 60 segundos.
+        </p>
+
+        <div class="price-regular">Precio regular: USD 99 por mes.</div>
+        <div class="price-founder">Precio fundadoras: USD 50 por mes / $80.000 ARS por mes.</div>
+
+        <div class="pricing-details">
+          <p><strong>¿Por qué este precio?</strong> Porque sos parte del grupo fundador. Mantenés este precio mientras sigas en la comunidad. Tu opinión y tu presencia van a definir cómo sigue esto. Solo son 20 lugares. No es un descuento para que entres: es un reconocimiento a que confiaste antes de que esto sea conocido.</p>
+          <p>LÚCIDAS funciona cuando se practica. Por eso, antes de que decidas, hablamos 30 minutos, gratis, para ver si es para vos. No hay letra chica. Y una vez adentro, cancelás cuando querés, sin explicaciones.</p>
+          <p>El pago se renueva cada mes. Sin contrato.</p>
+          <p style="color: var(--plum-deep); font-weight: 700; margin-top: 16px;">
+            El grupo fundador cierra el 4/11 o al completarse los 20 lugares. El primer encuentro es el sábado 7/11 a las 9 hs (hora de Argentina).
+          </p>
+        </div>
+
+        <a href="#" class="btn-primary wa-btn" style="width: 100%; max-width: 420px;">QUIERO MI ENCUENTRO GRATUITO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCUENTRO PRESENCIAL -->
+  <section class="bg-sand">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h2>Y una vez cada tanto, nos encontramos</h2>
+      <p class="lead">
+        La membresía es online. Cada 6 meses aproximadamente, si el grupo lo decide, nos juntamos un fin de semana en algún lugar de Argentina: prácticas, caminatas, comidas, silencios compartidos y un taller exclusivo.
+      </p>
+      <p style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--plum-deep); font-weight: 600;">
+        Es opcional y se paga aparte. Es un granito de presencialidad: la diferencia entre hablar por chat y sentarte al lado de otra mujer que está en lo mismo.
+      </p>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="bg-cream">
+    <div class="container">
+      <h2>Preguntas frecuentes</h2>
+      
+      <div class="faq-container">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo es el encuentro gratuito?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Son 30 minutos conmigo. Nos conocemos, te cuento cómo funciona LÚCIDAS y vemos si es para vos. Sin compromiso ni presión.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto cuesta?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>USD 50 por mes, o $80.000 ARS por mes si residís en Argentina. El precio regular es USD 99. Entrás con el precio del grupo fundador.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es pago único o mensual?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Mensual. No hay contrato ni mínimo: cancelás cuando querés.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Hasta cuándo dura el precio fundadoras?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Mientras sigas en la comunidad. Si te vas y volvés, entrás al precio regular.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se paga?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Después de nuestro encuentro te envío el link de pago. Si vivís en Argentina, es con Mercado Pago. Si vivís en otro país, lo vemos juntas en el encuentro.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuándo empiezo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Entrás apenas confirmás tu lugar. El primer encuentro en vivo es el sábado 7/11 a las 9 hs (hora de Argentina).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es terapia? ¿Reemplaza a mi médico o psicólogo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. Es un espacio de comunidad y práctica. Si estás en tratamiento, podés participar, pero no suspendas ni modifiques nada por esto.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tiempo requiere?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>60 segundos al día, 2 encuentros al mes y 1 taller al mes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Y si no puedo asistir en vivo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Quedan grabados. Si un mes no llegás, no pasa nada. Si es siempre, la experiencia pierde fuerza.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Tengo que hablar de mi pasado?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. El enfoque está en el presente. No se trabaja sobre heridas de la infancia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo es el encuentro presencial?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Opcional, no incluido en la membresía y cada 6 meses aproximadamente, si el grupo lo decide. Se hace en algún lugar de Argentina y se cotiza según el lugar y la cantidad de participantes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo invitar a una amiga?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí. Una vez al mes hacemos un encuentro abierto donde cada miembro puede traer a una amiga a conocer LÚCIDAS. Sin costo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE Y CTA FINAL -->
+  <section class="bg-sand text-center">
+    <div class="container" style="max-width: 800px;">
+      <h2>Estás bien, y aun así algo no encaja.</h2>
+      <p class="lead">Y no tenés que atravesar esta etapa sola.</p>
+      
+      <p style="font-family: var(--font-serif); font-size: 2.1rem; color: var(--plum-deep); font-weight: 700; margin: 28px 0;">
+        LÚCIDAS: un lugar donde no tenés que explicar tanto.
+      </p>
+
+      <div style="margin: 36px 0 16px;">
+        <a href="#" class="btn-primary wa-btn">QUIERO MI ENCUENTRO GRATUITO</a>
+      </div>
+      <span class="btn-subtext">Grupo fundador: 20 lugares · USD 50 / $80.000 ARS por mes · Primero hablamos 30 minutos</span>
+
+      <div class="legal-notice">
+        <strong>Aviso importante.</strong> LÚCIDAS es un espacio de bienestar, comunidad y práctica. No reemplaza ni sustituye la atención médica, psicológica, nutricional ni ningún otro tratamiento profesional. Si estás bajo tratamiento, LÚCIDAS puede acompañarte, pero no es un tratamiento en sí mismo. No suspendas ni modifiques ninguna indicación profesional por participar de esta comunidad.
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÓN FLOTANTE EN CELULAR -->
+  <div class="wa-float-bar">
+    <a href="#" class="btn-primary wa-btn">Reservar mi encuentro gratis</a>
+  </div>
+
+  <script>
+    const LUGARES_DISPONIBLES = 20;
+    const TOTAL_LUGARES = 20;
+    const WHATSAPP_URL = "https://wa.me/5493548543838?text=Hola%20Laura%2C%20quiero%20mi%20encuentro%20gratuito%20para%20entrar%20a%20L%C3%9ACIDAS";
+
+    /* ASIGNAR ENLACES DE WHATSAPP */
+    document.querySelectorAll('.wa-btn').forEach(btn => {
+      btn.href = WHATSAPP_URL;
+      btn.target = "_blank";
+      btn.rel = "noopener noreferrer";
+    });
+
+    /* CONTADOR */
+    const counterText = document.getElementById('counter-text');
+    if (counterText) {
+      counterText.textContent = `Quedan ${LUGARES_DISPONIBLES} de ${TOTAL_LUGARES} lugares fundadores`;
+    }
+
+    /* REPRODUCTOR DE VIDEO */
+    const video = document.getElementById('intro-video');
+    const overlay = document.getElementById('video-overlay');
+
+    if (overlay && video) {
+      overlay.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        video.play();
+      });
+
+      video.addEventListener('pause', () => {
+        if (video.currentTime === 0) {
+          overlay.classList.remove('hidden');
+        }
+      });
+
+      video.addEventListener('ended', () => {
+        overlay.classList.remove('hidden');
+      });
+    }
+
+    /* DETECCIÓN AUTOMÁTICA DE EXTENSIÓN PARA LA FOTO */
+    const profileImg = document.getElementById('laura-profile-img');
+    if (profileImg) {
+      profileImg.onerror = function() {
+        const fallbacks = ['foto_laura.jpeg', 'foto_laura2.jpg', 'foto_laura2.jpeg', 'foto_laura.JPG'];
+        let currentIndex = fallbacks.indexOf(this.dataset.tried || '');
+        if (currentIndex < fallbacks.length - 1) {
+          this.dataset.tried = fallbacks[currentIndex + 1];
+          this.src = fallbacks[currentIndex + 1];
+        }
+      };
+    }
+
+    /* ACORDEÓN FAQ */
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== item) other.classList.remove('active');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
